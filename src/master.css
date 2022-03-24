@@ -6,3 +6,11 @@
   font-family: "Roboto", sans-serif;
   color: white;
 }
+
+html {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: #e9ae6c;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e9ae6c), color-stop(32%, #f08b62), to(#e44c50));
+  background: linear-gradient(0deg, #e9ae6c 0%, #f08b62 32%, #e44c50 100%);
+}

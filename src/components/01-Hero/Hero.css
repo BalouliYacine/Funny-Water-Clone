@@ -1,8 +1,5 @@
 header {
   min-height: 100vh;
-  background: #f0ac69;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f0ac69), color-stop(23%, #ea6b59), color-stop(37%, #e55052));
-  background: linear-gradient(0deg, #f0ac69 0%, #ea6b59 23%, #e55052 37%);
   padding: 5%;
   padding-top: 0;
 }
@@ -62,9 +59,9 @@ header .heroSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,23 +72,28 @@ header .heroSection .heroTxt {
           flex: 1;
 }
 header .heroSection .heroTxt h1 {
-  font-size: 8.8rem;
-  font-weight: 800;
-  line-height: 0.8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-size: 8.4rem;
+  font-weight: 700;
+  line-height: 0.75;
 }
 header .heroSection .heroTxt h1 .TM {
   font-size: 1rem;
   letter-spacing: 0px;
   position: relative;
   display: inline-block;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
 }
 header .heroSection .heroTxt h1 .WATER {
   display: inline-block;
-  -webkit-transform: rotatey(180deg) rotateX(180deg);
-          transform: rotatey(180deg) rotateX(180deg);
-  letter-spacing: -2px;
+  -webkit-transform: rotatey(180deg) rotateX(180deg) translateX(-7px);
+          transform: rotatey(180deg) rotateX(180deg) translateX(-7px);
+  letter-spacing: -3px;
 }
 header .heroSection .heroTxt p {
   padding: 10px 0;
@@ -101,10 +103,10 @@ header .heroSection .heroTxt p {
 header .heroSection .heroTxt button {
   color: #e55052;
   border-radius: 50px;
-  width: 180px;
+  width: 170px;
   height: 60px;
   border: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   margin-top: 50px;
   -webkit-transition: all 0.4s;
@@ -112,7 +114,7 @@ header .heroSection .heroTxt button {
 }
 header .heroSection .heroTxt button:hover {
   background-color: #e55052;
-  color: white;
+  color: #fff;
 }
 header .heroSection .heroImg {
   -webkit-box-flex: 1.2;
@@ -120,5 +122,51 @@ header .heroSection .heroImg {
           flex: 1.2;
 }
 header .heroSection .heroImg img {
+  float: right;
+  max-width: 100%;
+}
+header .text {
+  margin: auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50vh;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+}
+header .text::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150%;
   width: 100%;
+  background-image: url(../../img/bubbles50b.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 50%;
+}
+header .text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  margin: auto;
+  max-width: 1200px;
 }

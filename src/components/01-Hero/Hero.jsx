@@ -39,6 +39,16 @@ export default function Hero() {
           <img src={heroImg} alt="" />
         </div>
       </div>
+      <div className="text">The responsible way to behave irresponsibly.</div>
+      <div className="text2">
+        <p>
+          {" "}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          distinctio consectetur nihil asperiores sequi. Dolorum corrupti
+          dolorem sint, numquam quo sequi adipisci, est a nulla et similique
+          aliquam, distinctio eos?
+        </p>
+      </div>
     </header>
   );
 }
