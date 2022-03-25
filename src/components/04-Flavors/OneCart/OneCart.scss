@@ -1,0 +1,42 @@
+.OneCart {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // flex-direction: row-reverse;
+
+  .OneCartTxt {
+    flex: 1;
+    h3 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    button {
+      background-color: #4a6d52;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 50px;
+      width: 170px;
+      height: 60px;
+      border: none;
+      font-weight: 500;
+      font-size: 18px;
+      margin-top: 40px;
+      transition: all 0.4s;
+      &:hover {
+        color: #4a6d52;
+        background-color: white;
+      }
+    }
+  }
+  .OneCartTxt {
+    flex: 1;
+    img {
+      width: 90%;
+    }
+  }
+}

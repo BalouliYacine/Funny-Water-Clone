@@ -1,0 +1,50 @@
+.OneCart {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.OneCart .OneCartTxt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.OneCart .OneCartTxt h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.OneCart .OneCartTxt p {
+  font-size: 1.2rem;
+}
+.OneCart .OneCartTxt button {
+  background-color: #4a6d52;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 170px;
+  height: 60px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 40px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.OneCart .OneCartTxt button:hover {
+  color: #4a6d52;
+  background-color: white;
+}
+.OneCart .OneCartTxt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.OneCart .OneCartTxt img {
+  width: 90%;
+}

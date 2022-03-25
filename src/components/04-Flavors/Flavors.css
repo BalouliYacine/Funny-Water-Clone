@@ -1,0 +1,10 @@
+.flavors {
+  margin: auto;
+  max-width: 1300px;
+  padding: 5%;
+  padding-top: 80px;
+}
+.flavors h1 {
+  text-align: center;
+  font-size: 5rem;
+}

@@ -10,7 +10,11 @@ header {
     padding: 180px 20px;
     padding-top: 12%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1300px;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     @media only screen and (max-width: 960px) {
       padding: 100px 5px;
       padding-top: 15%;
@@ -50,6 +54,9 @@ header {
         @media only screen and (max-width: 960px) {
           font-size: 5rem;
         }
+        @media only screen and (max-width: 600px) {
+          font-size: 22vw;
+        }
       }
       p {
         width: 70%;
@@ -84,6 +91,11 @@ header {
         width: 45%;
         top: 60px;
       }
+      @media only screen and (max-width: 600px) {
+        position: relative;
+        left: 0;
+        width: 100%;
+      }
       img {
         width: 100%;
       }
@@ -91,13 +103,17 @@ header {
   }
   .text {
     margin: auto;
-    max-width: 1200px;
+    max-width: 1300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 50vh;
     font-weight: 600;
     font-size: 4rem;
+    @media only screen and (max-width: 900px) {
+      font-size: 2.8rem;
+      min-height: 45vh;
+    }
     text-align: center;
     position: relative;
     p {
@@ -115,17 +131,8 @@ header {
       background-image: url(../../img/bubbles50b.png);
       background-size: contain;
       background-repeat: no-repeat;
-      opacity: 60%;
+      opacity: 70%;
     }
-  }
-  // TO DEL
-  .text2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    margin: auto;
-    max-width: 1200px;
   }
 }
 // 960

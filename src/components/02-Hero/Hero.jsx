@@ -24,9 +24,6 @@ export default function Hero() {
       <div className="text">
         <p>The responsible way to behave irresponsibly.</p>
       </div>
-
-      {/* TO REMOVE */}
-      <div className="text2"></div>
     </header>
   );
 }

@@ -1,45 +1,36 @@
 import React, { useState, useEffect } from "react";
 import "./NavBar.css";
+import menu from "../../img/layer1.svg";
 
 export default function NavBar() {
-  const [windowDimenion, detectHW] = useState({
+  const [windowDimenion, detectW] = useState({
     winWidth: window.innerWidth,
   });
-  const [Visibility, setVisibility] = useState("");
+  const [Visibility, setVisibility] = useState(() => {
+    if (windowDimenion.winWidth <= 600) {
+      return "hidden";
+    } else return "";
+  });
+  //
   function ScreenSize() {
     const detectSize = () => {
       if (windowDimenion.winWidth <= 600) {
         setVisibility("hidden");
       } else setVisibility("");
 
-      detectHW({
+      detectW({
         winWidth: window.innerWidth,
       });
     };
-
     useEffect(() => {
       window.addEventListener("resize", detectSize);
-
       return () => {
         window.removeEventListener("resize", detectSize);
       };
     }, [windowDimenion]);
-
-    return (
-      <div>
-        <p>
-          Width: <strong>{windowDimenion.winWidth}</strong>
-        </p>
-        <p>
-          Height: <strong>{windowDimenion.winHeight}</strong>
-        </p>
-      </div>
-    );
   }
-
   ScreenSize();
   function Show() {
-    //
     setVisibility(() => {
       if (Visibility === "visible") return "hidden";
       else return "visible";
@@ -51,7 +42,9 @@ export default function NavBar() {
       <ul className="show">
         <li>
           <li>
-            <button onClick={Show}>Show</button>
+            <button onClick={Show}>
+              <img src={menu} alt="" />
+            </button>
           </li>
         </li>
       </ul>
