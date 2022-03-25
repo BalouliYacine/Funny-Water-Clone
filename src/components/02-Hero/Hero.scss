@@ -2,52 +2,20 @@ header {
   min-height: 100vh;
   padding: 5%;
   padding-top: 0;
-  nav {
-    margin: auto;
-    max-width: 1200px;
-    ul {
-      display: flex;
-      justify-content: flex-end;
-      padding-top: 7%;
-      @media only screen and (max-width: 600px) {
-        flex-direction: column;
-        align-items: center;
-      }
-      li {
-        font-weight: 500;
-        list-style: none;
-        margin: 20px;
-        font-size: 20px;
-        a {
-          position: relative;
-          text-decoration: none;
-          &::before {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: -10px;
-            width: 00%;
-            height: 2px;
-            background-color: white;
-            transition: all 0.3s ease-out;
-          }
-          &:hover::before {
-            width: 100%;
-            left: 0;
-          }
-        }
-      }
-    }
-  }
   .heroSection {
-    padding: 40px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    padding: 180px 20px;
+    padding-top: 12%;
     margin: auto;
     max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @media only screen and (max-width: 960px) {
+      padding: 100px 5px;
+      padding-top: 15%;
+    }
     .heroTxt {
-      flex: 1;
       h1 {
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -56,7 +24,7 @@ header {
         -o-user-select: none;
         user-select: none;
         //
-        font-size: 8.4rem;
+        font-size: 8.5rem;
         font-weight: 700;
         line-height: 0.75;
         .TM {
@@ -65,27 +33,40 @@ header {
           position: relative;
           display: inline-block;
           transform: translateX(-60px);
+          @media only screen and (max-width: 960px) {
+            font-size: 0.6rem;
+            transform: translateX(-35px);
+          }
         }
         .WATER {
           display: inline-block;
-          transform: rotatey(180deg) rotateX(180deg) translateX(-7px);
-          letter-spacing: -3px;
+          transform: rotatey(180deg) rotateX(180deg) translateX(-10px);
+          letter-spacing: -5.6px;
+          @media only screen and (max-width: 960px) {
+            letter-spacing: -3.7px;
+            transform: rotatey(180deg) rotateX(180deg) translateX(-8px);
+          }
+        }
+        @media only screen and (max-width: 960px) {
+          font-size: 5rem;
         }
       }
       p {
+        width: 70%;
         padding: 10px 0;
         font-size: 24px;
         font-weight: 500;
       }
       button {
         color: rgba(229, 80, 82, 1);
+        cursor: pointer;
         border-radius: 50px;
         width: 170px;
         height: 60px;
         border: none;
         font-weight: 500;
         font-size: 18px;
-        margin-top: 50px;
+        margin-top: 40px;
         transition: all 0.4s;
         &:hover {
           background-color: rgba(229, 80, 82, 1);
@@ -94,10 +75,17 @@ header {
       }
     }
     .heroImg {
-      flex: 1.2;
+      width: 54%;
+      top: 30px;
+      right: 10px;
+      position: absolute;
+      z-index: -1;
+      @media only screen and (max-width: 800px) {
+        width: 45%;
+        top: 60px;
+      }
       img {
-        float: right;
-        max-width: 100%;
+        width: 100%;
       }
     }
   }
@@ -107,15 +95,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: 70vh;
     font-weight: 600;
     font-size: 4rem;
     text-align: center;
     position: relative;
+    p {
+      z-index: 1;
+    }
     &::before {
       content: "";
       z-index: 0;
       position: absolute;
+      display: inline-block;
       top: 0;
       left: 0;
       height: 150%;
@@ -123,9 +115,10 @@ header {
       background-image: url(../../img/bubbles50b.png);
       background-size: contain;
       background-repeat: no-repeat;
-      opacity: 50%;
+      opacity: 60%;
     }
   }
+  // TO DEL
   .text2 {
     display: flex;
     justify-content: center;
@@ -135,3 +128,6 @@ header {
     max-width: 1200px;
   }
 }
+// 960
+// 600
+// footer 500

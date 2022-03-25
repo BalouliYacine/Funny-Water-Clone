@@ -1,0 +1,89 @@
+nav {
+  margin: auto;
+  max-width: 1200px;
+}
+nav .show {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  nav .show {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 7%;
+  }
+  nav .show li {
+    display: inline-block;
+    z-index: 5;
+    list-style: none;
+    padding-right: 5%;
+  }
+}
+nav .navUL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 7%;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition: 0s all;
+  transition: 0s all;
+}
+@media only screen and (max-width: 600px) {
+  nav .navUL {
+    position: absolute;
+    font-weight: 400;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    padding-top: 15%;
+    line-height: 0.5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #4ea54b;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    z-index: 3;
+    font-size: 30px;
+  }
+}
+nav .navUL li {
+  list-style: none;
+  margin: 20px;
+}
+nav .navUL li a {
+  position: relative;
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  nav .navUL li a {
+    width: 100%;
+    display: inline-block;
+  }
+}
+nav .navUL li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+nav .navUL li a:hover::before {
+  width: 100%;
+  left: 0;
+}
