@@ -1,42 +1,64 @@
+#R {
+  flex-direction: row-reverse;
+  @media only screen and (max-width: 600px) {
+    flex-direction: row;
+    flex-direction: column;
+  }
+}
 .OneCart {
   max-width: 100%;
   display: flex;
   justify-content: center;
+  gap: 1.2rem;
   align-items: center;
 
-  // flex-direction: row-reverse;
-
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
   .OneCartTxt {
     flex: 1;
     h3 {
       font-size: 3rem;
       font-weight: 700;
+      padding-top: 50px;
     }
     p {
+      font-weight: 400;
       font-size: 1.2rem;
     }
     button {
-      background-color: #4a6d52;
-      color: #fff;
+      margin-bottom: 70px;
       cursor: pointer;
       border-radius: 50px;
       width: 170px;
       height: 60px;
-      border: none;
+      border: 1px solid;
       font-weight: 500;
       font-size: 18px;
       margin-top: 40px;
       transition: all 0.4s;
-      &:hover {
-        color: #4a6d52;
-        background-color: white;
-      }
     }
   }
   .OneCartTxt {
     flex: 1;
+    position: relative;
     img {
-      width: 90%;
+      width: 89%;
+    }
+  }
+  .ONIMg {
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      top: 30%;
+      background-image: url(../../../img/FunnyWater_Bubble-04.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 70%;
     }
   }
 }

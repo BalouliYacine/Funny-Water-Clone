@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-family: "Arimo", sans-serif;
   font-family: "Roboto", sans-serif;
   color: white;
 }
-
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 html {
+  scroll-behavior: smooth;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,7 +22,7 @@ html {
   background: linear-gradient(
     0deg,
     rgba(233, 174, 108, 1) 0%,
-    rgba(240, 139, 98, 1) 32%,
+    rgba(240, 139, 98, 1) 70%,
     rgba(228, 76, 80, 1) 100%
   );
 }

@@ -1,0 +1,24 @@
+.rec {
+  position: absolute;
+  z-index: -1;
+  left: -500%;
+  height: 60vh;
+  width: 1000%;
+  background-color: #62b770;
+  opacity: 90%;
+  transform: rotate(-10deg);
+  //
+  box-shadow: 0px 0px 400px 200px rgba(98, 183, 112, 1);
+  -webkit-box-shadow: 0px 0px 400px 200px rgba(98, 183, 112, 1);
+  -moz-box-shadow: 0px 0px 400px 200px rgba(98, 183, 112, 1);
+  //
+  animation: upANDdown infinite 5s alternate ease-in-out;
+}
+@keyframes upANDdown {
+  from {
+    top: 20%;
+  }
+  to {
+    top: 44%;
+  }
+}

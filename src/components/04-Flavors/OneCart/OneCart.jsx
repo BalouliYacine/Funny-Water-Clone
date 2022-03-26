@@ -1,22 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./OneCart.css";
-import Img1 from "../../../img/FunnyWater_CucumberMint-768x866.png";
 
-export default function OneCart() {
+export default function OneCart(props) {
+  const [color, setcolor] = useState("#fff");
+  const [bgColor, setbgColor] = useState(props.btncolor);
+  function hover() {
+    setcolor(props.btncolor);
+    setbgColor("#fff");
+  }
+  function leaveH() {
+    setcolor("#fff");
+    setbgColor(props.btncolor);
+  }
+
   return (
-    <div className="OneCart">
+    <div className="OneCart" id={props.id}>
       <div className="OneCartTxt">
-        <h3>Cucumber/Mint</h3>
-        <p>
-          Delightfully crisp yet refreshingly pretentious, this immaculate
-          combination of cucumber, mint, and alcohol is as light as it is
-          delicious. It’s the perfect reward after a half-assed workout and the
-          ideal remedy for a night in with the in-laws.
-        </p>
-        <button>BUY NOW</button>
+        <h3>{props.name} </h3>
+        <br />
+        <p>{props.desc}</p>
+
+        <button
+          style={{
+            backgroundColor: bgColor,
+            color: color,
+            borderColor: props.btncolor,
+          }}
+          onMouseEnter={hover}
+          onMouseLeave={leaveH}
+        >
+          BUY NOW
+        </button>
       </div>
-      <div className="OneCartTxt">
-        <img src={Img1} alt="" />
+
+      <div className="OneCartTxt ONIMg">
+        <img src={props.img} alt="" />
       </div>
     </div>
   );
