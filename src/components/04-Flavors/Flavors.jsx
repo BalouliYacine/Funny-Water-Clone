@@ -31,7 +31,7 @@ export default function Flavors() {
 
   return (
     <div className="flavors">
-      <h1>FLAVORS</h1>
+      <h2>FLAVORS</h2>
       <OneCart
         name={Flavors[0].name}
         desc={Flavors[0].desc}

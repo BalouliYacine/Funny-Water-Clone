@@ -1,6 +1,6 @@
 .rec {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   left: -500%;
   height: 60vh;
   width: 1000%;
@@ -8,9 +8,9 @@
   opacity: 90%;
   transform: rotate(-10deg);
   //
-  box-shadow: 0px 0px 400px 200px rgba(98, 183, 112, 1);
-  -webkit-box-shadow: 0px 0px 400px 200px rgba(98, 183, 112, 1);
-  -moz-box-shadow: 0px 0px 400px 200px rgba(98, 183, 112, 1);
+  box-shadow: 0px 0px 300px 300px rgba(98, 183, 112, 1);
+  -webkit-box-shadow: 0px 0px 300px 300px rgba(98, 183, 112, 1);
+  -moz-box-shadow: 0px 0px 300px 300px rgba(98, 183, 112, 1);
   //
   animation: upANDdown infinite 5s alternate ease-in-out;
 }

@@ -1,0 +1,59 @@
+.merch {
+  margin: auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 0;
+}
+.merch .merchImg {
+  -webkit-box-flex: 2.3;
+      -ms-flex: 2.3;
+          flex: 2.3;
+}
+.merch .merchImg img {
+  width: 100%;
+}
+.merch .merchTxt {
+  padding: 5%;
+  padding-left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.merch .merchTxt h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 30px 0;
+}
+.merch .merchTxt p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.merch .merchTxt button {
+  color: #e55052;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 170px;
+  height: 60px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 40px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.merch .merchTxt button:hover {
+  background-color: #e55052;
+  color: #fff;
+}

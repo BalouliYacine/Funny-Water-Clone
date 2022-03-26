@@ -1,9 +1,64 @@
 .press {
-  height: 80vh;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  h3 {
-    font-size: 5rem;
+  flex-direction: column;
+  h2 {
+    padding-top: 20px;
+    padding-left: 5%;
+    font-size: 7vw;
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+  }
+  .twoPress,
+  .foorPress,
+  .sixPress {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    max-width: 800px;
+    gap: 2.5rem;
+    @media only screen and (max-width: 700px) {
+      flex-wrap: wrap;
+      width: 70%;
+    }
+    @media only screen and (max-width: 600px) {
+      justify-content: center;
+    }
+  }
+  .twoPress {
+    img {
+      width: 42%;
+      @media only screen and (max-width: 600px) {
+        width: 60%;
+      }
+    }
+  }
+  .foorPress {
+    img {
+      width: 14.5%;
+      @media only screen and (max-width: 700px) {
+        width: 42%;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 60%;
+      }
+    }
+  }
+  .sixPress {
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    img {
+      width: 12%;
+      @media only screen and (max-width: 700px) {
+        width: 42%;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 60%;
+      }
+    }
   }
 }
