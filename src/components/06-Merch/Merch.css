@@ -1,20 +1,52 @@
 .merch {
   margin: auto;
-  max-width: 1200px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-right: 0;
 }
+@media only screen and (max-width: 600px) {
+  .merch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .merch .merchImg {
+  position: relative;
   -webkit-box-flex: 2.3;
       -ms-flex: 2.3;
           flex: 2.3;
+}
+.merch .merchImg::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  top: -20%;
+  left: 10%;
+  background-image: url(../../img/FunnyWater_Bubble-07.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
 }
 .merch .merchImg img {
   width: 100%;
 }
 .merch .merchTxt {
+  position: relative;
   padding: 5%;
   padding-left: 3%;
   display: -webkit-box;
@@ -30,6 +62,20 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+.merch .merchTxt::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  display: inline-block;
+  height: 40%;
+  width: 70%;
+  top: 10%;
+  right: 0;
+  background-image: url(../../img/FunnyWater_Bubble-08.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
 }
 .merch .merchTxt h3 {
   font-size: 3rem;

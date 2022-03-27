@@ -1,6 +1,6 @@
 .section {
   margin: auto;
-  max-width: 1300px;
+  max-width: 1500px;
   padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +39,7 @@
   background-image: url(../../img/FunnyWater_Bubble-03.png);
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 70%;
+  mix-blend-mode: overlay;
 }
 .section .sectionTxt h3 {
   font-size: 2.3rem;

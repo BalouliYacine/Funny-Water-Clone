@@ -5,6 +5,7 @@ import Section from "./components/03-Section/Section";
 import Flavors from "./components/04-Flavors/Flavors";
 import Press from "./components/05-Press/Press";
 import Merch from "./components/06-Merch/Merch";
+import Footer from "./components/07-Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Flavors />
       <Press />
       <Merch />
+      <Footer />
     </>
   );
 }
