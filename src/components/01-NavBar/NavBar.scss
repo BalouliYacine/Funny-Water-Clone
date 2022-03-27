@@ -9,7 +9,7 @@ nav {
       display: block;
       display: flex;
       justify-content: flex-end;
-      padding-top: 7%;
+      padding-top: 5%;
       li {
         display: inline-block;
         z-index: 5;
@@ -35,18 +35,18 @@ nav {
     padding-top: 7%;
     // to REdo
     padding-right: 5%;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     transition: 0s all;
 
     @media only screen and (max-width: 600px) {
-      position: fixed;
+      position: absolute;
       font-weight: 400;
       top: 0;
       width: 110vw;
       height: 110vh;
       padding: 8%;
-      padding-top: 15%;
+      padding-top: 20%;
       line-height: 0.5;
       flex-direction: column;
       background-color: #4ea54b;

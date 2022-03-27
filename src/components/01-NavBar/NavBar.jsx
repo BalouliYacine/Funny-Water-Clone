@@ -3,69 +3,52 @@ import "./NavBar.css";
 import menu from "../../img/layer1.svg";
 
 export default function NavBar() {
-  const [windowDimenion, detectW] = useState({
-    winWidth: window.innerWidth,
-  });
-  const [Visibility, setVisibility] = useState(() => {
-    if (windowDimenion.winWidth <= 600) {
-      return "hidden";
-    } else return "";
-  });
-  //
-  function ScreenSize() {
-    const detectSize = () => {
-      if (windowDimenion.winWidth <= 600) {
-        setVisibility("hidden");
-      } else setVisibility("");
+  const [Visibility, setVisibility] = useState(false);
+  const [windowDimenion, detectW] = useState(window.innerWidth);
 
-      detectW({
-        winWidth: window.innerWidth,
-      });
-    };
-    useEffect(() => {
-      window.addEventListener("resize", detectSize);
-      return () => {
-        window.removeEventListener("resize", detectSize);
-      };
-    }, [windowDimenion]);
-  }
-  ScreenSize();
   function Show() {
-    setVisibility(() => {
-      if (Visibility === "visible") return "hidden";
-      else return "visible";
-    });
+    setVisibility(!Visibility);
   }
+  useEffect(() => {
+    const changeWidth = () => {
+      detectW(window.innerWidth);
+    };
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
 
   return (
     <nav>
       <ul className="show">
         <li>
-          <li>
-            <button onClick={Show}>
-              <img src={menu} alt="" />
-            </button>
-          </li>
+          <button onClick={Show}>
+            <img src={menu} alt="" />
+          </button>
         </li>
       </ul>
 
-      <ul className="navUL" style={{ visibility: `${Visibility}` }}>
-        <li>
-          <a href="#About">About</a>
-        </li>
-        <li>
-          <a href="#Press">Press</a>
-        </li>
-        <li>
-          <a href="#BUY NOW">BUY NOW</a>
-        </li>
-        <li>
-          <a href="#Merch">Merch</a>
-        </li>
-        <li>
-          <a href="#Contact">Contact</a>
-        </li>
-      </ul>
+      {(Visibility || windowDimenion >= 600) && (
+        <ul className="navUL">
+          <li onClick={Show}>
+            <a href="#About">About</a>
+          </li>
+          <li onClick={Show}>
+            <a href="#Press">Press</a>
+          </li>
+          <li onClick={Show}>
+            <a href="#BUY NOW">BUY NOW</a>
+          </li>
+          <li onClick={Show}>
+            <a href="#Merch">Merch</a>
+          </li>
+          <li onClick={Show}>
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 }
