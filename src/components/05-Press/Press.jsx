@@ -24,7 +24,7 @@ import BeverageDynamics from "../../img/press/Beverage-Dynamics.png";
 
 export default function Press() {
   return (
-    <div className="press">
+    <div className="press" id="Press">
       <h2>PEOPLE ARE TALKING....</h2>
       <div className="twoPress">
         <img src={Forebs} alt="Forebs" />

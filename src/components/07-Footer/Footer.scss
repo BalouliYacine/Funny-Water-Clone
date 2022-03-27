@@ -10,8 +10,11 @@ footer {
   }
   .heroTxt {
     min-height: 50vh;
+    @media only screen and (max-width: 1150px) {
+      min-height: 30vh;
+    }
     margin: auto;
-    h1 {
+    h2 {
       -webkit-user-select: none;
       -khtml-user-select: none;
       -moz-user-select: none;
@@ -39,6 +42,7 @@ footer {
       display: flex;
       padding-top: 20px;
       img {
+        cursor: pointer;
         width: 40px;
         margin-right: 20px;
       }
@@ -49,8 +53,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    gap: 2rem;
     @media only screen and (max-width: 1150px) {
+      gap: 2rem;
       width: 100%;
     }
     @media only screen and (max-width: 600px) {
@@ -96,10 +100,14 @@ footer {
       }
     }
     .signup {
-      width: 100%;
+      width: 90%;
       margin-bottom: 100px;
+      p {
+        font-weight: 500;
+      }
       input {
         margin-top: 30px;
+        margin-bottom: 10px;
         width: 80%;
         border: none;
         padding: 5px 0;

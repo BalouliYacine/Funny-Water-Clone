@@ -18,7 +18,12 @@ footer .heroTxt {
   min-height: 50vh;
   margin: auto;
 }
-footer .heroTxt h1 {
+@media only screen and (max-width: 1150px) {
+  footer .heroTxt {
+    min-height: 30vh;
+  }
+}
+footer .heroTxt h2 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -28,7 +33,7 @@ footer .heroTxt h1 {
   font-weight: 700;
   line-height: 0.75;
 }
-footer .heroTxt h1 .TM {
+footer .heroTxt h2 .TM {
   font-size: 0.8rem;
   letter-spacing: 0px;
   position: relative;
@@ -36,7 +41,7 @@ footer .heroTxt h1 .TM {
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
 }
-footer .heroTxt h1 .WATER {
+footer .heroTxt h2 .WATER {
   display: inline-block;
   -webkit-transform: rotatey(180deg) rotateX(180deg) translateX(-10px);
           transform: rotatey(180deg) rotateX(180deg) translateX(-10px);
@@ -49,6 +54,7 @@ footer .heroTxt .social {
   padding-top: 20px;
 }
 footer .heroTxt .social img {
+  cursor: pointer;
   width: 40px;
   margin-right: 20px;
 }
@@ -62,13 +68,13 @@ footer .footerItems {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 60%;
-  gap: 2rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 @media only screen and (max-width: 1150px) {
   footer .footerItems {
+    gap: 2rem;
     width: 100%;
   }
 }
@@ -127,11 +133,15 @@ footer .footerItems a:hover::before {
   left: 0;
 }
 footer .footerItems .signup {
-  width: 100%;
+  width: 90%;
   margin-bottom: 100px;
+}
+footer .footerItems .signup p {
+  font-weight: 500;
 }
 footer .footerItems .signup input {
   margin-top: 30px;
+  margin-bottom: 10px;
   width: 80%;
   border: none;
   padding: 5px 0;

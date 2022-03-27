@@ -4,7 +4,7 @@ import MerchTshirt from "../../img/FunnyWater_TShirt-1-1024x769.png";
 
 export default function Merch() {
   return (
-    <div className="merch">
+    <div className="merch" id="Merch">
       <div className="merchImg">
         <img src={MerchTshirt} alt="MerchTshirt" />
       </div>

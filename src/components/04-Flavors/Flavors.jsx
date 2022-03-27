@@ -30,7 +30,7 @@ export default function Flavors() {
   ];
 
   return (
-    <div className="flavors">
+    <div className="flavors" id="BUYNOW">
       <h2>FLAVORS</h2>
       <OneCart
         name={Flavors[0].name}

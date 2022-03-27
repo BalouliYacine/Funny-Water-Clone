@@ -39,7 +39,7 @@ export default function NavBar() {
             <a href="#Press">Press</a>
           </li>
           <li onClick={Show}>
-            <a href="#BUY NOW">BUY NOW</a>
+            <a href="#BUYNOW">BUY NOW</a>
           </li>
           <li onClick={Show}>
             <a href="#Merch">Merch</a>
