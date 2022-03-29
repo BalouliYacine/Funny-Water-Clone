@@ -1,3 +1,7 @@
+footer {
+  position: relative;
+  overflow: hidden;
+}
 footer .footerUP {
   max-width: 1500px;
   margin: auto;

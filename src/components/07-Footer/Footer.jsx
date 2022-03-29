@@ -3,6 +3,7 @@ import "./Footer.css";
 import Fb from "../../img/icons/akar-icons_facebook-fill.svg";
 import Tw from "../../img/icons/akar-icons_twitter-fill.svg";
 import Ig from "../../img/icons/dashicons_instagram.svg";
+import Rec2 from "../--RECBottom/--Rec2";
 
 export default function Footer() {
   return (
@@ -79,6 +80,7 @@ export default function Footer() {
       </div>
       {/*  */}
       <div className="footerImg"></div>
+      <Rec2 />
     </footer>
   );
 }

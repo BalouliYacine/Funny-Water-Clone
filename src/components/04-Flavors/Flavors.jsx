@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import "./Flavors.css";
 import OneCart from "./OneCart/OneCart";
 import Img1 from "../../img/FunnyWater_CucumberMint-768x866.png";
@@ -31,27 +32,35 @@ export default function Flavors() {
 
   return (
     <div className="flavors" id="BUYNOW">
-      <h2>FLAVORS</h2>
-      <OneCart
-        name={Flavors[0].name}
-        desc={Flavors[0].desc}
-        img={Flavors[0].img}
-        btncolor={Flavors[0].btncolor}
-      />
+      <Fade>
+        <h2>FLAVORS</h2>
+      </Fade>
+      <Fade>
+        <OneCart
+          name={Flavors[0].name}
+          desc={Flavors[0].desc}
+          img={Flavors[0].img}
+          btncolor={Flavors[0].btncolor}
+        />
+      </Fade>
       <Rec />
-      <OneCart
-        name={Flavors[1].name}
-        desc={Flavors[1].desc}
-        img={Flavors[1].img}
-        btncolor={Flavors[1].btncolor}
-        id={Flavors[1].id}
-      />
-      <OneCart
-        name={Flavors[2].name}
-        desc={Flavors[2].desc}
-        btncolor={Flavors[2].btncolor}
-        img={Flavors[2].img}
-      />
+      <Fade>
+        <OneCart
+          name={Flavors[1].name}
+          desc={Flavors[1].desc}
+          img={Flavors[1].img}
+          btncolor={Flavors[1].btncolor}
+          id={Flavors[1].id}
+        />
+      </Fade>
+      <Fade>
+        <OneCart
+          name={Flavors[2].name}
+          desc={Flavors[2].desc}
+          btncolor={Flavors[2].btncolor}
+          img={Flavors[2].img}
+        />
+      </Fade>
     </div>
   );
 }

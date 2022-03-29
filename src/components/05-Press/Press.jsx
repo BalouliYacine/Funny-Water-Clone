@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import "./Press.css";
 import Forebs from "../../img/press/Forbes.png";
 import MarketWatch from "../../img/press/marketwatch.png";
@@ -25,33 +26,41 @@ import BeverageDynamics from "../../img/press/Beverage-Dynamics.png";
 export default function Press() {
   return (
     <div className="press" id="Press">
-      <h2>PEOPLE ARE TALKING....</h2>
-      <div className="twoPress">
-        <img src={Forebs} alt="Forebs" />
-        <img src={MarketWatch} alt="MarketWatch" />
-      </div>
+      <Fade>
+        <h2>PEOPLE ARE TALKING....</h2>
+      </Fade>
+      <Fade>
+        <div className="twoPress">
+          <img src={Forebs} alt="Forebs" />
+          <img src={MarketWatch} alt="MarketWatch" />
+        </div>
+      </Fade>
       {/*  */}
-      <div className="foorPress">
-        <img src={Bomb} alt="Bomb" />
-        <img src={Bevnet} alt="Bevnet" />
-        <img src={TestingThng} alt="TestingThng" />
-        <img src={Cpgd} alt="Cpgd" />
-      </div>
+      <Fade>
+        <div className="foorPress">
+          <img src={Bomb} alt="Bomb" />
+          <img src={Bevnet} alt="Bevnet" />
+          <img src={TestingThng} alt="TestingThng" />
+          <img src={Cpgd} alt="Cpgd" />
+        </div>
+      </Fade>
       {/*  */}
-      <div className="sixPress">
-        <img src={Bartender} alt="Bartender" />
-        <img src={Winsight} alt="Winsight" />
-        <img src={foodDive} alt="foodDive" />
-        <img src={trndhunter} alt="trndhunter" />
-        <img src={chilled} alt="chilled" />
-        <img src={JustDrinks} alt="JustDrinks" />
-        <img src={convinenceStore} alt="convinenceStore" />
-        <img src={Cheers} alt="Cheers" />
-        <img src={brewbound} alt="brewbound" />
-        <img src={Kane} alt="Kane" />
-        <img src={daily} alt="daily" />
-        <img src={BeverageDynamics} alt="BeverageDynamics" />
-      </div>
+      <Fade>
+        <div className="sixPress">
+          <img src={Bartender} alt="Bartender" />
+          <img src={Winsight} alt="Winsight" />
+          <img src={foodDive} alt="foodDive" />
+          <img src={trndhunter} alt="trndhunter" />
+          <img src={chilled} alt="chilled" />
+          <img src={JustDrinks} alt="JustDrinks" />
+          <img src={convinenceStore} alt="convinenceStore" />
+          <img src={Cheers} alt="Cheers" />
+          <img src={brewbound} alt="brewbound" />
+          <img src={Kane} alt="Kane" />
+          <img src={daily} alt="daily" />
+          <img src={BeverageDynamics} alt="BeverageDynamics" />
+        </div>
+      </Fade>
     </div>
   );
 }

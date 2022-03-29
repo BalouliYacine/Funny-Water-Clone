@@ -1,0 +1,24 @@
+.Rec2 {
+  position: absolute;
+  z-index: -2;
+  left: -500%;
+  height: 30%;
+  width: 1000%;
+  background-color: #62b770;
+  opacity: 90%;
+  transform: rotate(-10deg);
+  //
+  box-shadow: 0px 0px 300px 300px rgba(98, 183, 112, 1);
+  -webkit-box-shadow: 0px 0px 300px 300px rgba(98, 183, 112, 1);
+  -moz-box-shadow: 0px 0px 300px 300px rgba(98, 183, 112, 1);
+  //
+  animation: upANDdown2 infinite 5s alternate ease-in-out;
+}
+@keyframes upANDdown2 {
+  from {
+    top: 80%;
+  }
+  to {
+    top: 120%;
+  }
+}

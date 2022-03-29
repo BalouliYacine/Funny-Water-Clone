@@ -1,6 +1,7 @@
 import "./Hero.css";
 import React from "react";
 import heroImg from "../../img/FW_Cans_Overlapping-768x703.png";
+import Fade from "react-reveal/Fade";
 
 export default function Hero() {
   return (
@@ -20,10 +21,11 @@ export default function Hero() {
           <img src={heroImg} alt="" />
         </div>
       </div>
-
-      <div className="text">
-        <p>The responsible way to behave irresponsibly.</p>
-      </div>
+      <Fade>
+        <div className="text">
+          <p>The responsible way to behave irresponsibly.</p>
+        </div>
+      </Fade>
     </header>
   );
 }
